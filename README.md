@@ -33,7 +33,6 @@ npm run preview
 
 # Technologies
 
-Here's a table for the **Technologies** section in your README:
 
 | **Technology**   | **Description**                                                           | **Link**                                |
 |------------------|---------------------------------------------------------------------------|-----------------------------------------|
