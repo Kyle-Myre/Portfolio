@@ -9,11 +9,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@formkit/auto-animate": "^0.8.2",
     "portfolio": "file:",
     "vue": "^3.4.37"
   },
   "devDependencies": {
+    "@iconify-json/ic": "^1.2.0",
+    "@iconify/vue": "^4.1.2",
     "@vitejs/plugin-vue": "^5.1.2",
+    "autoprefixer": "^10.4.20",
+    "daisyui": "^4.12.11",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13",
     "vite": "^5.4.1"
   }
 }
