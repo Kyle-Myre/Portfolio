@@ -1,0 +1,39 @@
+name: Build and Deploy to Page Branch
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      # Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build project
+        run: npm run build
+
+      - name: Deploy to page branch
+        run: |
+          git config --global user.name "Kyle-Myre"
+          git config --global user.email "simoarmymen9@gmail.com"
+          git checkout -B page
+          git add -f dist
+          git commit -m "Deploy to page branch"
+          git push -f origin page
+      - name: Clean up
+        run: rm -rf dist
