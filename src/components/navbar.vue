@@ -17,7 +17,7 @@
 <template>
   <nav class="flex flex-row items-center mt-16">
     <section class="flex-1 flex flex-row items-center gap-3">
-      <img src="https://avatars.githubusercontent.com/u/59917135?v=4" alt="Kyle Myre" class="size-12 rounded-[35px] shadow-lg" />
+      <img src="https://avatars.githubusercontent.com/u/59917135?v=4" alt="Kyle Myre" class="size-12 rounded-[35px]" />
       <h1 class="text-xl font-semibold">Kyle Myre</h1>
     </section>
     <section class="lg:flex hidden">

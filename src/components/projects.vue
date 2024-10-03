@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <h1 class="text-2xl text-center">Projects</h1>
+    <h1 class="text-2xl lg:text-start text-center">Projects</h1>
     <main class="flex lg:flex-row flex-col justify-around mt-12 mb-12 gap-2">
         <div class="flex-1 flex flex-col  grayscale">
             <img src="/TSMS.jpeg" alt="">
